@@ -5,43 +5,441 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Hakan Işık">
+    <meta name="author" content="Fehmi UYAR">
     <meta name="description" content="web tasarım ve pazarlama">
     <meta name="keywords" content="web,tasarım,dizayn,programlama,yazılım,geliştirme">
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-    <title>New Design</title>
-
+    <title>New Design | Ders 63</title>
     <style>
         @import url("css/all.css");
     </style>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/extra.css">
 </head>
 
-<body>
-     
+<body id="page-body">
+    <!-- navigation start-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="new design website link">New Design</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar"
+                aria-controls="myNavbar" aria-label="menüyü açma kapama butonu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Kapat">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-uppercase py-lg-2 te">
+                        <li class="nav-item"><a href="#services" class="nav-link btn-close-canvas">Servisler</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link btn-close-canvas">Portföy</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link btn-close-canvas">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link btn-close-canvas">Ekip</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link btn-close-canvas">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation end-->
+
+    <!--header start-->
     <header class="backImage text-white text-center">
         <div class="container">
             <div class="backImage-sub mb-4">Stüdyomuza Hoş Geldin!</div>
             <div class="backImage-heading text-uppercase">Tanıştığımıza Memnun Olduk</div>
-            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha fazla anlat</a>
+            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Daha Fazla Anlat</a>
         </div>
     </header>
+    <!--header end-->
 
+    <!-- services start-->
+    <section id="services" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold">Servisler</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                    vitae quidem nostrum?</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center m-auto"
+                        style="width: 8rem;height:8rem;" aria-hidden="true">
+                        <i class="bi bi-cart" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">E-Ticaret</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima non
+                        recusandae unde magnam
+                        voluptate sed explicabo nulla voluptatum dignissimos esse reprehenderit modi amet repudiandae
+                        ducimus consequatur? Enim, veritatis eligendi!</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center m-auto"
+                        style="width: 8rem;height:8rem;" aria-hidden="true">
+                        <i class="bi bi-laptop" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">Duyarlı Tasarım</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima non
+                        recusandae unde magnam
+                        voluptate sed explicabo nulla voluptatum dignissimos esse reprehenderit modi amet repudiandae
+                        ducimus consequatur? Enim, veritatis eligendi!</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center m-auto"
+                        style="width: 8rem;height:8rem;" aria-hidden="true">
+                        <i class="bi bi-shield-lock" style="font-size: 4.5rem;"></i>
+                    </div>
+                    <h4 class="my-3 fw-bold">Web Güvenliği</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minima non
+                        recusandae unde magnam
+                        voluptate sed explicabo nulla voluptatum dignissimos esse reprehenderit modi amet repudiandae
+                        ducimus consequatur? Enim, veritatis eligendi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services end-->
 
+    <!--portfolio start-->
+    <section id="portfolio" class="mySection bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="s-heading text-uppercase fw-bold">Portföy</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            </div>
+            <div class="row gy-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal1" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/1.png" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Karaprens</div>
+                            <div class="pc-subheading text-muted fst-italic">İllüstrasyon</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal2" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/2.jpg" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Keşif</div>
+                            <div class="pc-subheading text-muted fst-italic">Grafik Tasarım</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal3" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/3.jpg" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Çizgisel Evren</div>
+                            <div class="pc-subheading text-muted fst-italic">Kimlik</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal4" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/4.jpg" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Matrik</div>
+                            <div class="pc-subheading text-muted fst-italic">Markalaşma</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal5" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/5.jpeg" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Derin Çizgi</div>
+                            <div class="pc-subheading text-muted fst-italic">Web Site Tasarımı</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="p-item">
+                        <a href="#PModal6" class="p-link" data-bs-toggle="modal">
+                            <div class="p-hover">
+                                <div class="ph-content text-white">
+                                    <i class="bi bi-plus-lg"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/6.jpg" alt=".." />
+                        </a>
+                        <div class="p-caption text-center bg-white p-4">
+                            <div class="pc-heading">Düş Penceresi</div>
+                            <div class="pc-subheading text-muted fst-italic">Fotoğrafçılık</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--portfolio end-->
 
+    <!-- about start -->
+    <section id="about" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <h2 class="s-heading text-uppercase fw-bold">Hakkımızda</h2>
+                <h3 class="s-subheading text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius omnis repellendus doloremque, rem iure culpa excepturi corporis aliquid temporibus, ratione eligendi magni provident distinctio nisi est!</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="t-image">
+                        <img class="img-fluid rounded-circle" src="img/about/1.png" alt="img/about/1.png">
+                    </div>
+                    <div class="t-panel">
+                        <div class="t-heading">
+                            <h4>2009-2013</h4>
+                            <h4 class="subheading">Mütevazı Başlangıcımız</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et corrupti nemo facilis nostrum harum provident, aliquam explicabo, molestiae optio laborum aperiam, aliquid illo. Provident quibusdam repellendus praesentium, minima harum voluptatibus?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <img class="img-fluid rounded-circle" src="img/about/2.jpg" alt="img/about/2.jpg">
+                    </div>
+                    <div class="t-panel">
+                        <div class="t-heading">
+                            <h4>Nisan 2014</h4>
+                            <h4 class="subheading">Bir Ajans Doğuyor</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et corrupti nemo facilis nostrum harum provident, aliquam explicabo, molestiae optio laborum aperiam, aliquid illo. Provident quibusdam repellendus praesentium, minima harum voluptatibus?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <img class="img-fluid rounded-circle" src="img/about/3.jpg" alt="img/about/3.jpg">
+                    </div>
+                    <div class="t-panel">
+                        <div class="t-heading">
+                            <h4>Kasım 2015</h4>
+                            <h4 class="subheading">Tam Hizmete Geçiş</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et corrupti nemo facilis nostrum harum provident, aliquam explicabo, molestiae optio laborum aperiam, aliquid illo. Provident quibusdam repellendus praesentium, minima harum voluptatibus?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <img class="img-fluid rounded-circle" src="img/about/4.jpg" alt="img/about/4.jpg">
+                    </div>
+                    <div class="t-panel">
+                        <div class="t-heading">
+                            <h4>Eylül 2021</h4>
+                            <h4 class="subheading">İkinci Aşama Genişleme</h4>
+                        </div>
+                        <div class="t-body">
+                            <p class="text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et corrupti nemo facilis nostrum harum provident, aliquam explicabo, molestiae optio laborum aperiam, aliquid illo. Provident quibusdam repellendus praesentium, minima harum voluptatibus?</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="t-image">
+                        <h4>hikayemizin <br> bir parçası <br> ol!</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
+    <!-- about end -->
 
-
-
-
-
-
-
-
-
-
-
+    <!--portfolio modals-->
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal1" tabindex="-1" role="dialog" aria-labelledby="myTitle1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle1">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/1.png" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal2" tabindex="-1" role="dialog" aria-labelledby="myTitle2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle2">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/2.jpg" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal3" tabindex="-1" role="dialog" aria-labelledby="myTitle3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle3">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/3.jpg" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal4" tabindex="-1" role="dialog" aria-labelledby="myTitle4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle4">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/4.jpg" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal5" tabindex="-1" role="dialog" aria-labelledby="myTitle5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle5">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/5.jpeg" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio modal item 1-->
+    <div class="modal fade p-modal" id="PModal6" tabindex="-1" role="dialog" aria-labelledby="myTitle6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content text-center py-5 mt-2">
+                <div class="close-modal" data-bs-dismiss="modal" aria-label="Kapat">
+                    <img src="img/close-icon.svg" alt="..." />
+                </div>
+                <div class="modal-body">
+                            <h2 class="text-uppercase mb-3" id="myTitle6">Gökyüzü</h2>
+                            <p class="p-intro text-muted mb-4 fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsa? Eaque aliquid reprehenderit quo commodi! Autem modi cumque error.</p>
+                            <img class="img-fluid d-block mx-auto" src="img/portfolio/6.jpg" alt="..." />
+                            <p class="my-4 col-lg-6 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum sapiente molestias rem distinctio ullam! Libero reiciendis sequi, veniam minima dolorem eligendi deserunt nobis dolor rerum assumenda? Quam, architecto nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id aliquam quibusdam eum sequi unde dolores dicta commodi molestias quam repellendus. Iusto eos aut architecto veritatis recusandae aliquid, fugit facilis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium sapiente, assumenda, obcaecati nulla laudantium facere veniam possimus velit soluta sequi corrupti tenetur. Fugiat, dolor temporibus dicta beatae repellat tenetur.
+                            Totam, similique. Cumque enim explicabo dolores deserunt excepturi voluptates labore animi itaque similique, totam aspernatur doloribus accusantium, a aliquam porro dicta alias impedit autem magni repellat! Quod consectetur atque tempora.
+                            Eveniet quisquam quam itaque nemo dolorum id facilis odio aliquid accusantium? Obcaecati temporibus ad dicta consequatur. Distinctio, illum dolor eius sequi, alias voluptas adipisci quibusdam facere, vitae velit reprehenderit dolorem?</p>
+                            <ul class="list-inline mb-4">
+                                <li><strong>Müşteri:</strong>Karaprens</li>
+                                <li><strong>Kategori:</strong>İllüstrasyon</li>
+                            </ul>
+                            <button class="btn btn-danger btn-lg text-uppercase py-3" data-bs-dismiss="modal"
+                            type="button">Projeyi Kapat <i class="bi bi-x-lg ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/custom/extra.js"></script>
